@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import "./Notes.css"
+import trash from '../svgs//trash.svg'
+import edit from '../svgs//edit.svg'
 import AddNewButton from '../components/UI/AddNewButton'
 
 function Notes() {
@@ -14,9 +16,9 @@ function Notes() {
                         <h1>{n.title}</h1>
                         <div className='desc'>{n.description}</div>
                       </div>
-                        <div>
-                          <div>excluir</div>
-                          <div>edit</div>
+                        <div className='links'>
+                          <div className='svgs'><img src={trash}/></div>
+                          <div className='svgs'><img src={edit}/></div>
                         </div>
                       </div>
         )
