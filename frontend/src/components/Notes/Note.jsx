@@ -1,6 +1,8 @@
 import React from 'react'
 import trash from '../../svgs//trash.svg'
 import edit from '../../svgs//edit.svg'
+import {BiSolidEditAlt} from 'react-icons/bi'
+import {FaTrashAlt} from 'react-icons/fa'
 import "./Note.css"
 function Note({n}) {
   return (
@@ -14,8 +16,8 @@ function Note({n}) {
                 {n.date}
             </div>
             <div className='links'>
-                <div className='svgs'><img src={trash}/></div>
-                <div className='svgs'><img src={edit}/></div>
+                <div className='svgs'><BiSolidEditAlt size={20}/></div>
+                <div className='svgs'><FaTrashAlt color='red' size={20}/></div>
             </div>
         </div>
     </div>
