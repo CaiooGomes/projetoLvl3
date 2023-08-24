@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./Notes.css"
-import trash from '../svgs//trash.svg'
-import edit from '../svgs//edit.svg'
+
+import Note from '../components/Notes/Note'
 import AddNewButton from '../components/UI/AddNewButton'
 
 function Notes() {
@@ -11,16 +11,7 @@ function Notes() {
     <div className='notes'>
       <AddNewButton/>
       {
-        notes.map(n=><div className='note'>
-                      <div>
-                        <h1>{n.title}</h1>
-                        <div className='desc'>{n.description}</div>
-                      </div>
-                        <div className='links'>
-                          <div className='svgs'><img src={trash}/></div>
-                          <div className='svgs'><img src={edit}/></div>
-                        </div>
-                      </div>
+        notes.map(n=> <Note n={n}/>
         )
       }
     </div>

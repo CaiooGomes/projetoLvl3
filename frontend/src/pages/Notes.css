@@ -28,3 +28,7 @@
 .svgs{
     height: 25px;
 }
+.links{
+    display: flex;
+    flex-direction: row;
+}
