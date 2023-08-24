@@ -1,0 +1,40 @@
+.note{
+    background-color: #274F73;
+    width: 456px;
+    height: 250px;
+    border: white 1px solid;
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+.desc{
+    font-size: 1.4rem;
+}
+
+.note h1{
+    text-align: center;
+}
+
+.svgs{
+    height: 25px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+}
+
+.noteRodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.noteRodape div{
+    margin-inline: 10px;
+    margin-bottom: 5px;
+}
