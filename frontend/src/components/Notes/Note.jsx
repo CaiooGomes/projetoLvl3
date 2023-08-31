@@ -1,6 +1,4 @@
 import React from 'react'
-import trash from '../../svgs//trash.svg'
-import edit from '../../svgs//edit.svg'
 import {BiSolidEditAlt} from 'react-icons/bi'
 import {FaTrashAlt} from 'react-icons/fa'
 import "./Note.css"
