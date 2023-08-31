@@ -2,7 +2,7 @@ import React from 'react'
 import {BiSolidEditAlt} from 'react-icons/bi'
 import {FaTrashAlt} from 'react-icons/fa'
 import "./Note.css"
-function Note({n}) {
+function Note({n,abrirOModal}) {
   return (
     <div className='note'>
         <div>
@@ -15,7 +15,7 @@ function Note({n}) {
             </div>
             <div className='links'>
                 <div className='svgs'><BiSolidEditAlt size={20}/></div>
-                <div className='svgs'><FaTrashAlt color='red' size={20}/></div>
+                <div onClick={()=>abrirOModal} className='svgs'><FaTrashAlt color='red' size={20}/></div>
             </div>
         </div>
     </div>

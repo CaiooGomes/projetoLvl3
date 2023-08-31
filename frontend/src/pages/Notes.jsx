@@ -11,11 +11,14 @@ function Notes() {
   const mudarModal= ()=>{
     SetShowModal((state)=>!state)
   }
+  const addMode= ()=>{
+
+  }
   return (
     <div className='notes'>
       <AddNewButton abrirOModal={mudarModal}/>
       {
-        notes.map(n=> <Note n={n}/>)
+        notes.map(n=> <Note abrirOModal={mudarModal} n={n}/>)
       }
 
       {
