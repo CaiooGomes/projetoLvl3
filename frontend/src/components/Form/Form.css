@@ -1,0 +1,27 @@
+.form{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+  }
+  .form label{
+    font-size: 22px;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+  .form input{
+    background-color: rgba(255, 255, 255, 0.11);
+    border: 2px solid #F24BE7;
+    border-radius: 4px;
+    color: white;
+    padding-left: 10px;
+  }
+  .form button{
+    color:white;
+    height:50px;
+    border-radius:20px;
+    background-color: #F24BE7;
+    margin-top: 30px;
+  }
+  .form button:hover,.closeModal:hover{
+    cursor:pointer;
+  }
